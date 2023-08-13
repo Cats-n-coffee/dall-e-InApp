@@ -11,7 +11,6 @@ const createAppWindow = () => {
   })
 
   win.loadFile('./renderers/index.html');
-  win.webContents.openDevTools();
 
   win.on('close', () => {
     win = null;
