@@ -12,7 +12,8 @@ Once logged into the app, the user can enter a prompt to create an image. If clo
 
 ## Technical Details
 The environment variables have been ignored, so you will need to create a file named `env-variables.json` in the root of the project and add the following:
-```{
+```
+{
     "auth0Domain": "<your_authO_domain>",
     "clientId": "<your_client_id>",
     "openAIKey": "<your_openai_key>"

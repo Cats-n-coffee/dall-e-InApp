@@ -20,6 +20,7 @@ logoutButton.addEventListener('click', () => {
 const promptInput = document.querySelector('#image-prompt-input');
 const promptButton = document.querySelector('#send-prompt-button');
 const promptImage = document.querySelector('#prompt-result');
+const promptError = document.querySelector('#prompt-error');
 
 promptButton.addEventListener('click', async () => {
     const trimmedInput = promptInput.value.trim();
@@ -28,5 +29,18 @@ promptButton.addEventListener('click', async () => {
         const response = await window.electronApi.makeApiRequest(promptInput.value);
         promptImage.src = response;
         promptImage.alt = promptInput.value;
+    }
+    // Basic erorr handling, OpenAI prompts need to have more than 1 word
+    if (trimmedInput.length && !trimmedInput.includes(' ')) {
+        promptError.classList.add('alert');
+        promptError.style.height = 'auto';
+        promptError.style.padding = '6px';
+
+        setTimeout(() => {
+            promptError.classList.remove('alert');
+            promptError.style.height = '0px';
+            promptError.style.padding = '0px';
+            promptError.style.transition = '400ms ease-in-out';
+        }, 3000);
     }
 })

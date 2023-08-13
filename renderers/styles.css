@@ -86,8 +86,17 @@ html, body {
     cursor: pointer;
 }
 
-.alert-success {
-    background-color: rgb(136, 217, 136);
-    padding: 6px;
+.alert {
     transition: 400ms ease-in-out;
+}
+
+.alert-success {
+    padding: 6px;
+    background-color: rgb(136, 217, 136);
+}
+
+.prompt-error {
+    height: 0px;
+    padding: 0px 6px;
+    background-color: rgb(252, 114, 137);
 }
