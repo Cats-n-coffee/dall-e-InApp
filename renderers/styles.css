@@ -25,6 +25,13 @@ html, body {
 .auth-section {
     display: flex;
     align-items: center;
+    gap: 12px;
+}
+
+#picture {
+    width: 36px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .prompt-section h1 {
@@ -44,7 +51,12 @@ html, body {
 }
 
 .image-section {
-    height: 100%;
+    height: calc(100% - 134px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(94, 94, 94);
+    overflow: scroll;
 }
 
 .btn {
@@ -76,4 +88,6 @@ html, body {
 
 .alert-success {
     background-color: rgb(136, 217, 136);
+    padding: 6px;
+    transition: 400ms ease-in-out;
 }

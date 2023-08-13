@@ -2,7 +2,6 @@ const envVariables = require('../env-variables.json');
 const { Configuration, OpenAIApi } = require('openai');
 
 async function makeApiRequest(promptString = '') {
-    // HANDLE THE EMPTY STRING
     if (!promptString) return;
 
     const configuration = new Configuration({
@@ -14,7 +13,7 @@ async function makeApiRequest(promptString = '') {
         const response = await openai.createImage({
             prompt: promptString,
             n: 1,
-            size: '1024x1024',
+            size: '512x512',
         });
     
         return response.data.data[0]['url'];
