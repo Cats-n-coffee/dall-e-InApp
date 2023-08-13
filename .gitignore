@@ -65,3 +65,4 @@ env-variables.json
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.DS_Store

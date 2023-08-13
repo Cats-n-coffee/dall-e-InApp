@@ -2,7 +2,7 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
 const createAppWindow = () => {
-  const win = new BrowserWindow({
+  let win = new BrowserWindow({
     width: 1366,
     height: 768,
     webPreferences: {
@@ -17,9 +17,5 @@ const createAppWindow = () => {
     win = null;
   });
 }
-
-app.whenReady().then(() => {
-  createAppWindow();
-});
 
 module.exports = createAppWindow;
