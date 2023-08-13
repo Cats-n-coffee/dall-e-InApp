@@ -2,6 +2,8 @@
 
 A user interface for Dall-E using the `CreateImage` API. 
 
+<img src="./dall-e-inapp.gif" alt="Dall-e InApp demo" width="auto" height="400">
+
 ## Authentication
 The user is required to authenticate using AuthO. All the steps and file structure are taken from this [article/tutorial](https://auth0.com/blog/securing-electron-applications-with-openid-connect-and-oauth-2/).<br>
 Once authenticated, the user's profile image is displayed along with the name (which has been removed for video recording).
