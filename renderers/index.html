@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; img-src https://oaidalleapiprodscus.blob.core.windows.net/"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link href="styles.css" rel="stylesheet"/>
+    <title>Dall-e In App</title>
+  </head>
+  <body>
+    <div>
+      <img id="picture" />
+      <span id="name"></span>
+      <button id="logout" class="btn">Logout</button>
+    </div>
+    <h1>Hello from Electron renderer!</h1>
+    <div>
+      <div id="success" class="alert-success"></div>
+      <div id="message" class="jumbotron"></div>
+      <div>
+        <label for="image-prompt">Enter your prompt:</label>
+        <input type="text" id="image-prompt-input">
+        <button id="send-prompt-button" class="btn-primary">
+          Generate
+        </button>
+      </div>
+    <div>
+      <img src="" alt="" id="prompt-result">
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

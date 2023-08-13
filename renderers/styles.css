@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+
+.alert-success {
+    background-color: rgb(37, 217, 37);
+}
+
+.jumbotron {
+    background-color: rgb(217, 213, 213);
+}
+
+.btn-primary {
+    background-color: antiquewhite;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "midjourneyapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Desktop app for Midjourney",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Cats-n-coffee",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.4.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "jwt-decode": "^3.1.2",
+    "keytar": "^7.9.0",
+    "openai": "^3.3.0"
+  }
+}
