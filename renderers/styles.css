@@ -1,15 +1,79 @@
-h1 {
-    color: red;
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    padding: 10px 8px;
+}
+
+.auth-section {
+    display: flex;
+    align-items: center;
+}
+
+.prompt-section h1 {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.prompt-section input[type=text] {
+    padding: 4px 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid rgb(152, 152, 152);
+    margin-right: 16px;
+}
+
+.prompt-section input[type=text]:focus {
+    outline: 1px solid rgb(59, 129, 250);
+}
+
+.image-section {
+    height: 100%;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(10, 98, 249);
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+    transition: 300ms ease-in;
+}
+
+.btn:hover {
+    background-color: rgb(59, 129, 250);
+    cursor: pointer;
+}
+
+#logout {
+    background-color: rgb(64, 63, 63);
+    transition: 300ms ease-in;
+}
+
+#logout:hover {
+    background-color: rgb(101, 101, 101);
+    cursor: pointer;
 }
 
 .alert-success {
-    background-color: rgb(37, 217, 37);
-}
-
-.jumbotron {
-    background-color: rgb(217, 213, 213);
-}
-
-.btn-primary {
-    background-color: antiquewhite;
+    background-color: rgb(136, 217, 136);
 }

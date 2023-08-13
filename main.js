@@ -16,7 +16,6 @@ async function showWindow() {
 app.on('ready', () => {
   ipcMain.handle('auth:get-profile', authService.getProfile);
   ipcMain.handle('make-open-ai-request', (e, args) => {
-    console.log('args', args);
     return apiService.makeApiRequest(args);
   });
   ipcMain.on('auth:logout', () => {
